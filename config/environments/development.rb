@@ -81,4 +81,7 @@ Rails.application.configure do
   config.hosts << pf_host
 
   config.action_cable.allowed_request_origins = ["https://#{pf_host}"]
+  
+  #クラウドIDEでwebサーバーに接続可能
+  config.hosts.clear
 end
